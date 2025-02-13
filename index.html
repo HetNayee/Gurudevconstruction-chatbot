@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Demo</title>
+  </head>
+
+  <body>
+    <script type="module">
+      import Chatbot from "https://app.chatsguru.co/web.js";
+      Chatbot.init({
+        chatbotId: "genbot2025-02-07T08:34:49.871Z-05433",
+      }).catch((error) => {
+        console.error("Error initializing chatbot:", error);
+      });
+    </script>
+
+    <script type="module">
+      import Chatbot from "https://app.chatsguru.co/web.js";
+      Chatbot.initFull({
+        chatbotId: "genbot2025-02-07T08:34:49.871Z-05433",
+      }).catch((error) => {
+        console.error("Error initializing chatbot:", error);
+      });
+    </script>
+    <!-- <iframe frameborder="0" src="https://app.chatsguru.co/emb.html?chatbotId=genbot2025-02-07T08:34:49.871Z-05433" style="
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+  " title="Chatbot"></iframe> -->
+    <chatsguru-fullchatbot></chatsguru-fullchatbot>
+  </body>
+</html>
